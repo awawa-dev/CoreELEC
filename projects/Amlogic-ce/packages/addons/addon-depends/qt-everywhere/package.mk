@@ -2,12 +2,12 @@
 # Copyright (C) 2018-present Team CoreELEC (https://coreelec.org)
 
 PKG_NAME="qt-everywhere"
-PKG_VERSION="5.13.0"
-PKG_SHA256="2cba31e410e169bd5cdae159f839640e672532a4687ea0f265f686421e0e86d6"
+PKG_VERSION="5.15.4"
+PKG_SHA256="615ff68d7af8eef3167de1fd15eac1b150e1fd69d1e2f4239e54447e7797253b"
 PKG_ARCH="any"
 PKG_LICENSE="GPL"
 PKG_SITE="http://qt-project.org"
-PKG_URL="http://download.qt.io/archive/qt/${PKG_VERSION::-2}/${PKG_VERSION}/single/${PKG_NAME}-src-${PKG_VERSION}.tar.xz"
+PKG_URL="http://download.qt.io/archive/qt/${PKG_VERSION::-2}/${PKG_VERSION}/single/${PKG_NAME}-opensource-src-${PKG_VERSION}.tar.xz"
 PKG_DEPENDS_TARGET="pcre2 zlib"
 PKG_SOURCE_DIR="${PKG_NAME}-src-${PKG_VERSION}"
 PKG_LONGDESC="A cross-platform application and UI framework"
