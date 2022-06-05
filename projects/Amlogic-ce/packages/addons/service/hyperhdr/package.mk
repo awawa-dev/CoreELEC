@@ -2,17 +2,17 @@
 # Copyright (C) 2018-present Team CoreELEC (https://coreelec.org)
 
 PKG_NAME="hyperhdr"
-PKG_VERSION="99bea943ffdd9742466cd4ec2551d2cbde2602c6"
-PKG_REV="183"
+PKG_VERSION="8d314bc41f17de3abfeaeb94b34ba40921aaa8ba"
+PKG_REV="184"
 PKG_LICENSE="GPL"
 PKG_SITE="https://github.com/awawa-dev/HyperHDR"
 PKG_URL="https://github.com/awawa-dev/HyperHDR.git"
 GET_HANDLER_SUPPORT="git"
-PKG_DEPENDS_TARGET="toolchain avahi qt-everywhere protobuf pkg-config libjpeg-turbo alsa"
+PKG_DEPENDS_TARGET="toolchain qt-everywhere pkg-config libjpeg-turbo alsa"
 PKG_TOOLCHAIN="cmake"
 PKG_SECTION="service"
 PKG_SHORTDESC="HyperHDR: an ambient lighting controller"
-PKG_LONGDESC="HyperHDR (v18.0.0.0beta2.elec) is an opensource ambient lighting implementation."
+PKG_LONGDESC="HyperHDR (v18.0.0.0beta3) is an opensource ambient lighting implementation."
 
 PKG_IS_ADDON="yes"
 PKG_ADDON_NAME="HyperHDR"
@@ -34,7 +34,6 @@ fi
 
 PKG_CMAKE_OPTS_TARGET="-DCMAKE_NO_SYSTEM_FROM_IMPORTED=ON \
                        -DCMAKE_BUILD_TYPE=Release \
-                       -DUSE_SHARED_AVAHI_LIBS=OFF\
                        -DUSE_STATIC_QT_PLUGINS=ON \
                        $PKG_PLATFORM \
                        $PKG_DENABLE_WS281XPWM \
